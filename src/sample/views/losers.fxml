@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #87CEFA;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.LosersController">
+    <children>
+        <AnchorPane layoutY="112.0" prefHeight="287.0" prefWidth="700.0" style="-fx-background-color: #E0FFFF;">
+            <children>
+                <TableView fx:id="table" layoutX="47.0" layoutY="19.0" prefHeight="202.0" prefWidth="507.0">
+                    <columns>
+                        <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+                        <TableColumn fx:id="firstName" prefWidth="163.99993896484375" text="firstName" />
+                        <TableColumn fx:id="secondName" prefWidth="132.800048828125" text="secondName" />
+                        <TableColumn fx:id="group" prefWidth="129.59994506835938" text="group" />
+                    </columns>
+                </TableView>
+                <Button fx:id="removeButton" layoutX="270.0" layoutY="237.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" text="delete losers" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="290.0" layoutY="28.0" prefHeight="62.0" prefWidth="126.0" text="losers" textFill="#a829ae">
+            <font>
+                <Font name="Berlin Sans FB" size="36.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
